@@ -19,7 +19,7 @@ public class Usuarios {
         Scanner a= new Scanner (System.in);//ingresa datos de usuarios
         String[]persona= new String [5];//se guardan con el array 5 usuarios
         do{ 
-        System.out.println("MENÚ DE OPCIONES DE USUARIOS");
+        System.out.println("MENÚ DE OPCIONES DE USUARIOS");//menú de Usuarios y opciones
         System.out.println("1. INGRESAR USUARIOS");
         System.out.println("2. MOSTRAR USUARIOS ASCENDENTES");
         System.out.println("3. MOSTRAR USUARIOS DESCENDIENTES");
@@ -32,25 +32,25 @@ public class Usuarios {
             case 1:
                for ( i=0; i<persona.length;i++){
                 System.out.println("Ingrese el nombre de Usuario: ");
-                d=a.next();
+                d=a.next();//se ingresa 5 veces el usuario
                 persona[i]=d;
-                for (int l=0; l<i; l++){
-                    if (persona[i].equals(persona[l])){
+                for (int l=0; l<i; l++){//esta bucle va de 0 hasta la variable del for anterior
+                    if (persona[i].equals(persona[l])){//se compran la variable global en cada una de las condiciones
                     System.out.println("Ya existe la persona, ingrese de nuevo");
                      d=a.next();
-                    persona[i]=d; 
+                    persona[i]=d; //si no se cumple la condición se vuelve a ingresar el usuario
                     }
                } 
                }
                 break;
             case 2:
                 for (int j=0; j<persona.length; j++){//aparecerán los datos guardados de forma ascendente
-                    System.out.println(""+persona[j]);
+                    System.out.println(""+persona[j]);//guardados en una variable global
                 }
                 break;
             case 3:
                 for (int k=persona.length-1; k>=0;k--){//guardará los datos de forma descendente
-                    System.out.println(""+persona[k]);
+                    System.out.println(""+persona[k]);//guardados en una variable global
                 }
                 break;
             case 4:
@@ -58,10 +58,10 @@ public class Usuarios {
                entrad.main(args);
                 break;
             default:
-                System.exit(0);
+                System.exit(0);//sale del sistema
                 break;
         }
-        }while(c<=4);
+        }while(c<=4);//la condición se cumple siempre y cuando el usuario ingrese de 1-4
     }
     
 }

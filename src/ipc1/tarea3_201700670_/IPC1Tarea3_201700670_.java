@@ -23,7 +23,7 @@ public class IPC1Tarea3_201700670_ {
         System.out.println("[IPC1]Tarea3_201700670"); // Este es un menú de opciones que se mostrará al usuario
         System.out.println();
         System.out.println("MENÚ DE OPCIONES");
-        System.out.println("1.USUARIOS");
+        System.out.println("1. USUARIOS");
         System.out.println("2. CONTADOR DE DÍGITOS");
         System.out.println("3. TRES NÚMEROS DE MAYOR A MENOR");
         System.out.println("4. CALCULAR PROMEDIO");
@@ -53,9 +53,10 @@ public class IPC1Tarea3_201700670_ {
                 System.exit(0); //salir del programa
                 break;
             default:
-                break;
-               
+                break; 
         }
     }
-    
 }
+//Repositorio.página donde se encuentran los commits,tuve problema con ellos al principio por lo que aparecen en 
+//horas seguidas, además en el anterior commit que había creado no aparecían los demás programas
+//la página es: https://github.com/201700670/Tarea3_201700670_

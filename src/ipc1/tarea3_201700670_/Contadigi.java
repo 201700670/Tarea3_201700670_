@@ -5,7 +5,7 @@
  */
 package ipc1.tarea3_201700670_;
 
-import java.util.Scanner;
+import java.util.Scanner;//es una librería para ingresar los datos
 
 /**
  *
@@ -49,7 +49,7 @@ public class Contadigi {
                entrad.main(args);
                 break;
             default:
-                System.exit(0);
+                System.exit(0);//la condición se cumple siempre y cuando el usuario ingrese de 1-3
                 break;
         }
       }   while (b<=3);

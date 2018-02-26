@@ -36,7 +36,7 @@ public class Promedio {
         switch(b){//se utiliza un switch para que al ingresar un número sea el del menú y se desarrolle
             //lo que desea el usuario hacer
             case 1:
-                for(int i = 0; i<matriz.length; i++){
+                for(int i = 0; i<matriz.length; i++){//se cumple porque va desde 0 a la longitud de la matriz
                         System.out.println("Ingrese su carné ID: ");//ingresa el número de ID
                         ID=a.nextInt();//variable con la sentencia de ingresar datos
                         matriz[i][0]=ID;//va imprimir en ese orden la matriz
@@ -71,9 +71,9 @@ public class Promedio {
                entrad.main(args);
                 break;
             default:
-                System.exit(0);
+                System.exit(0);// de lo contrario se sale del programa
                 break;
         }
-      }   while (b<=3);
+      }   while (b<=3);////la condición se cumple siempre y cuando el usuario ingrese de 1-3
     }
 }
